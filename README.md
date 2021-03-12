@@ -2,4 +2,4 @@
 a sublime-text version of [the vscode theme](https://github.com/zhiayang/vscode-theme-pretentious-name).
 
 ## how
-copy both the `.tmTheme` files to your packages folder.
+clone the repo (or extract the `.zip`) to your sublime packages folder.
