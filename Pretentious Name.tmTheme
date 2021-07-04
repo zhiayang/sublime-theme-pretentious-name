@@ -168,7 +168,7 @@
 			<key>name</key>
 			<string>Storage type</string>
 			<key>scope</key>
-			<string>storage.type</string>
+			<string>storage.type, keyword.declaration</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
