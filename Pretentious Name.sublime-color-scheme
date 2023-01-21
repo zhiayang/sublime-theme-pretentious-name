@@ -1,0 +1,308 @@
+{
+    "name": "Pretentious Name",
+    "author": "zhiayang",
+    "variables":
+    {
+        "black": "#000000",
+        "black2": "#171717",
+        "black3": "#1c1c1d",
+        "blue": "#61afef",
+        "blue2": "#abb2bf",
+        "blue3": "#81a2be",
+        "blue4": "#3e4451",
+        "blue5": "#6c99bb",
+        "blue6": "#5a647e",
+        "blue7": "#d2d6db",
+        "cyan": "#56b6c2",
+        "green": "#98c379",
+        "grey": "#333435",
+        "grey2": "#737c8c",
+        "grey3": "#5c6370",
+        "grey4": "#808080",
+        "grey5": "#767676",
+        "grey6": "#cfcfcf",
+        "orange": "#e5b567",
+        "orange2": "#e5c07b",
+        "orange3": "#9d550f",
+        "orange4": "#d19a66",
+        "orange5": "#ffe792",
+        "orange6": "#de935f",
+        "orange7": "#e87d3e",
+        "pink": "#ff69b4",
+        "pink2": "#b05279",
+        "purple": "#8a2be2",
+        "purple2": "#9e86c8",
+        "purple3": "#b294bb",
+        "red": "#cc6666",
+        "red2": "#e06c75",
+        "white": "#f8f8f0",
+        "yellow": "#eeee66",
+        "yellow2": "#b5bd68",
+        "yellow3": "#b4c973"
+    },
+    "globals":
+    {
+        "foreground": "var(blue2)",
+        "background": "var(black2)",
+        "caret": "var(blue2)",
+        "invisibles": "var(grey4)",
+        "line_highlight": "var(grey)",
+        "selection": "var(blue4)",
+        "selection_border": "var(blue6)",
+        "active_guide": "color(var(orange3) alpha(0.69))",
+        "find_highlight_foreground": "var(black)",
+        "find_highlight": "var(orange5)",
+        "brackets_options": "underline",
+        "brackets_foreground": "var(blue2)",
+        "bracket_contents_options": "underline",
+        "bracket_contents_foreground": "var(blue2)",
+        "tags_options": "stippled_underline"
+    },
+    "rules":
+    [
+        {
+            "name": "Comment",
+            "scope": "comment",
+            "foreground": "var(grey3)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Punctuation",
+            "scope": "open, close, semi_colon, comma, coma, period, punctuation",
+            "foreground": "var(grey2)"
+        },
+        {
+            "name": "String",
+            "scope": "string",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Number",
+            "scope": "constant.numeric",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "Built-in constant",
+            "scope": "constant.language",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "User-defined constant",
+            "scope": "constant.character, constant.other",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Variable",
+            "scope": "variable.other.readwrite.instance.coffee",
+            "foreground": "var(blue7)"
+        },
+        {
+            "name": "Entity name",
+            "scope": "entity.name.type.class.coffee",
+            "foreground": "var(orange4)"
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword",
+            "foreground": "var(red2)"
+        },
+        {
+            "name": "Operator",
+            "scope": "keyword.operator",
+            "foreground": "var(blue5)"
+        },
+        {
+            "name": "Storage",
+            "scope": "storage",
+            "foreground": "var(orange2)"
+        },
+        {
+            "name": "Storage type",
+            "scope": "storage.type, keyword.declaration",
+            "foreground": "var(blue)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Class name",
+            "scope": "entity.name.class",
+            "foreground": "var(yellow3)"
+        },
+        {
+            "name": "Inherited class",
+            "scope": "entity.other.inherited-class",
+            "foreground": "var(yellow3)"
+        },
+        {
+            "name": "Function name",
+            "scope": "entity.name.function",
+            "foreground": "var(orange4)"
+        },
+        {
+            "name": "Function argument",
+            "scope": "variable.parameter",
+            "foreground": "var(orange7)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Tag name",
+            "scope": "meta.mapping.key string, entity.name.tag",
+            "foreground": "var(pink2)"
+        },
+        {
+            "name": "Tag attribute",
+            "scope": "entity.other.attribute-name",
+            "foreground": "var(yellow3)"
+        },
+        {
+            "name": "Library function",
+            "scope": "support.function",
+            "foreground": "var(orange4)"
+        },
+        {
+            "name": "Library constant",
+            "scope": "support.constant",
+            "foreground": "var(blue5)"
+        },
+        {
+            "name": "Library class/type",
+            "scope": "support.type, support.class",
+            "foreground": "var(blue)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Library variable",
+            "scope": "support.other.variable"
+        },
+        {
+            "name": "Invalid",
+            "scope": "invalid",
+            "foreground": "var(white)",
+            "background": "var(pink2)"
+        },
+        {
+            "name": "Undefined",
+            "scope": "undefined",
+            "foreground": "var(white)",
+            "background": "var(pink2)"
+        },
+        {
+            "name": "Invalid deprecated",
+            "scope": "invalid.deprecated",
+            "foreground": "var(white)",
+            "background": "var(purple2)"
+        },
+        {
+            "name": "JSON String",
+            "scope": "meta.structure.dictionary.json string.quoted.double.json",
+            "foreground": "var(grey6)"
+        },
+        {
+            "name": "diff.header",
+            "scope": "meta.diff, meta.diff.header",
+            "foreground": "var(grey5)"
+        },
+        {
+            "name": "diff.deleted",
+            "scope": "markup.deleted",
+            "foreground": "var(pink2)"
+        },
+        {
+            "name": "diff.inserted",
+            "scope": "markup.inserted",
+            "foreground": "var(yellow3)"
+        },
+        {
+            "name": "diff.changed",
+            "scope": "markup.changed",
+            "foreground": "var(orange)"
+        },
+        {
+            "scope": "constant.numeric.line-number.find-in-files - match",
+            "foreground": "color(var(purple2) alpha(0.63))"
+        },
+        {
+            "scope": "entity.name.filename.find-in-files",
+            "foreground": "var(orange)"
+        },
+        {
+            "scope": "rainbowth0",
+            "foreground": "var(red)",
+            "background": "var(black3)"
+        },
+        {
+            "scope": "rainbowth0-lineHighlight",
+            "foreground": "var(red)",
+            "background": "var(grey)"
+        },
+        {
+            "scope": "rainbowth1",
+            "foreground": "var(orange6)",
+            "background": "var(black3)"
+        },
+        {
+            "scope": "rainbowth1-lineHighlight",
+            "foreground": "var(orange6)",
+            "background": "var(grey)"
+        },
+        {
+            "scope": "rainbowth2",
+            "foreground": "var(yellow)",
+            "background": "var(black3)"
+        },
+        {
+            "scope": "rainbowth2-lineHighlight",
+            "foreground": "var(yellow)",
+            "background": "var(grey)"
+        },
+        {
+            "scope": "rainbowth3",
+            "foreground": "var(yellow2)",
+            "background": "var(black3)"
+        },
+        {
+            "scope": "rainbowth3-lineHighlight",
+            "foreground": "var(yellow2)",
+            "background": "var(grey)"
+        },
+        {
+            "scope": "rainbowth4",
+            "foreground": "var(blue3)",
+            "background": "var(black3)"
+        },
+        {
+            "scope": "rainbowth4-lineHighlight",
+            "foreground": "var(blue3)",
+            "background": "var(grey)"
+        },
+        {
+            "scope": "rainbowth5",
+            "foreground": "var(purple3)",
+            "background": "var(black3)"
+        },
+        {
+            "scope": "rainbowth5-lineHighlight",
+            "foreground": "var(purple3)",
+            "background": "var(grey)"
+        },
+        {
+            "scope": "rainbowth6",
+            "foreground": "var(pink)",
+            "background": "var(black3)"
+        },
+        {
+            "scope": "rainbowth6-lineHighlight",
+            "foreground": "var(pink)",
+            "background": "var(grey)"
+        },
+        {
+            "scope": "rainbowth7",
+            "foreground": "var(purple)",
+            "background": "var(black3)"
+        },
+        {
+            "scope": "rainbowth7-lineHighlight",
+            "foreground": "var(purple)",
+            "background": "var(grey)"
+        }
+    ]
+}

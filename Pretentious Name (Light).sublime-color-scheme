@@ -1,0 +1,148 @@
+{
+    "name": "Pretentious Name (Light)",
+    "author": "zhiayang",
+    "variables":
+    {
+        "blue": "#4271ae",
+        "blue2": "#434a56",
+        "cyan": "#3e999f",
+        "green": "#bbde90",
+        "grey": "#666969",
+        "grey2": "#9d9da0",
+        "grey3": "#808090",
+        "grey4": "#4d4d58",
+        "grey5": "#aeafad",
+        "grey6": "#a8a8a8",
+        "grey7": "#d6d6d6",
+        "orange": "#bd7f00",
+        "purple": "#8959a8",
+        "red": "#c94949",
+        "white": "#ffffff",
+        "white2": "#e0e0e0",
+        "white3": "#f4f4f0",
+        "yellow": "#718c00"
+    },
+    "globals":
+    {
+        "foreground": "var(grey4)",
+        "background": "var(white3)",
+        "caret": "var(grey5)",
+        "invisibles": "var(grey6)",
+        "line_highlight": "var(white2)",
+        "selection": "var(grey7)"
+    },
+    "rules":
+    [
+        {
+            "name": "Comment",
+            "scope": "comment, string.quoted.double.block.python",
+            "foreground": "var(grey3)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Foreground",
+            "scope": "keyword.operator.class, constant.other, source.php.embedded.line",
+            "foreground": "var(grey)"
+        },
+        {
+            "name": "Variable, String Link, Regular Expression, Tag Name",
+            "scope": "variable, support.other.variable, string.other.link, string.regexp, entity.name.tag, entity.other.attribute-name, meta.tag, meta.mapping.key string, declaration.tag, support.function",
+            "foreground": "var(blue2)"
+        },
+        {
+            "name": "Punctuation",
+            "scope": "punctuation",
+            "foreground": "var(grey2)"
+        },
+        {
+            "name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
+            "scope": "constant.numeric, constant.language, support.constant, constant.character, variable.parameter, punctuation.section.embedded, keyword.other.unit",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Class, Support",
+            "scope": "entity.name.class, entity.name.type.class, support.type, support.class, support.function.general.latex",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Latex Builtins",
+            "scope": "support.function.general.latex, support.function.section.latex, support.function.texttt.latex, support.function.textbf.latex, support.function.textit.latex, support.function.text.latex, support.function.emph.latex",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Latex Minted (inline)",
+            "scope": "support.function.mintinline.latex",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "String, Symbols, Inherited Class, Markup Heading",
+            "scope": "string, constant.other.symbol, entity.other.inherited-class, markup.heading",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "Operator, Misc",
+            "scope": "keyword.operator, constant.other.color",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "Function, Special Method, Block Level",
+            "scope": "entity.name.function, meta.function-call, keyword.other.special-method, meta.block-level",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Keyword, Storage",
+            "scope": "keyword, storage, storage.type",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Invalid",
+            "scope": "invalid",
+            "foreground": "var(white)",
+            "background": "var(red)"
+        },
+        {
+            "name": "Separator",
+            "scope": "meta.separator",
+            "foreground": "var(white)",
+            "background": "var(blue)"
+        },
+        {
+            "name": "Deprecated",
+            "scope": "invalid.deprecated",
+            "foreground": "var(white)",
+            "background": "var(purple)"
+        },
+        {
+            "name": "Diff foreground",
+            "scope": "markup.inserted.diff, markup.deleted.diff, meta.diff.header.to-file, meta.diff.header.from-file",
+            "foreground": "var(white)"
+        },
+        {
+            "name": "Diff insertion",
+            "scope": "markup.inserted.diff, meta.diff.header.to-file",
+            "background": "var(yellow)"
+        },
+        {
+            "name": "Diff deletion",
+            "scope": "markup.deleted.diff, meta.diff.header.from-file",
+            "background": "var(red)"
+        },
+        {
+            "name": "Diff header",
+            "scope": "meta.diff.header.from-file, meta.diff.header.to-file",
+            "foreground": "var(white)",
+            "background": "var(blue)"
+        },
+        {
+            "name": "Diff range",
+            "scope": "meta.diff.range",
+            "foreground": "var(cyan)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Proven with Coq",
+            "scope": "meta.proven.coq",
+            "background": "var(green)"
+        }
+    ]
+}
